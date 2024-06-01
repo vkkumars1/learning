@@ -1,0 +1,28 @@
+{
+  "name": "votingapp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "a voting application where user can vote to their favourite party during elections!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "postman"
+  ],
+  "author": "Varun Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}

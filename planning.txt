@@ -1,0 +1,40 @@
+voting application
+
+--roadmap--
+
+functionalities:-
+1.user sign in/sign up-username adhar card number(government id proof) password
+2.see the list of parties-who are stading for elections
+3.voting one of the party-Only one and after voting user not allowed to vote
+4.route where it will shows the list of parties along with the live counting respectively with sorting algo    
+5.user json data must contain one id proof like aadhar card number
+6.only admin can manage the data of parties update delete the data but he can't vote
+7.user can update his/her password
+8.user can login with their aadhar card number and password only
+
+
+
+
+---------------------------------
+
+Routes
+
+1.User Authentication
+       /signup:POST: create a new user data and got saved in mongodb
+       /login:POST: login with exisiting accound with aadhar and password and gets token in return
+--Role-voter
+2.Voting
+       /parties: GET:  get the list of parties
+       /vote/:partyId: Vote for the specfic candidate-Role:Voter
+
+3.Vote counts:
+       /vote/counts: GET: get the list of candidates with sorted counts
+
+4.User Profile
+       /profile: GET: get the user's profile information
+       /profile/password: can update the user's password
+Role-Admin
+5.admin candidate management:
+   /party: POST can create a new party
+   /party/:partyId: PUT can update a existing party
+   /party/:partyId : DELETE: can Delete exisying Party
