@@ -1,0 +1,15 @@
+git init-> Initialize git repo in the project basically now git is ready to track and save every changes in the project and show to public 
+
+git -a ->to view .git file 
+touch git.txt - to create any file
+vi git.txt -> to add any content to txt file via terminal
+cat git.txt ->to get data of txt file in terminal
+
+git status -> tell the status of the files which are untracked means not moved to staging area(stage) 
+git add . or <particular filename>
+git commit -m "<message for particular commit > "
+commit->snapshot of the files which are moved in staging area with message(discription)->of particular changes
+git restore --staged <filename> - remove the file from staged area
+rm -rf <filename> to delete any file via terminal
+git reset particular commit hashid->is commit se pehle jitne bhi commits hoyenge sare staged files unstaged hojayenge
+
